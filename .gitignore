@@ -1,0 +1,15 @@
+.env
+images
+learning_cmpx
+# Python
+__pycache__/
+*.py[cod]
+blogvenv/
+
+# Backend artifacts
+backend/blog.db
+backend/outputs/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/

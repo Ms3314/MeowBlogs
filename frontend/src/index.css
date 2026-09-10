@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-white text-slate-800 antialiased;
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  background-image:
+    radial-gradient(50rem 35rem at 8% -10%, rgba(249, 115, 22, 0.12), transparent 60%),
+    radial-gradient(45rem 30rem at 100% 0%, rgba(124, 58, 237, 0.10), transparent 55%);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(249, 115, 22, 0.25);
+}
+
+/* Thin scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #fed7aa;
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #fdba74;
+  background-clip: content-box;
+}
+
+@layer components {
+  .glass {
+    @apply border border-orange-100 bg-white/80 backdrop-blur-xl;
+  }
+  .card {
+    @apply glass rounded-2xl shadow-lg shadow-orange-900/5;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold transition
+      focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-400/70 disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-brand-500 text-white hover:bg-brand-600 shadow-lg shadow-brand-500/25;
+  }
+  .btn-ghost {
+    @apply btn border border-orange-200 bg-white text-slate-700 hover:bg-orange-50;
+  }
+  .input {
+    @apply w-full rounded-xl border border-orange-200 bg-white px-4 py-3 text-sm text-slate-800
+      placeholder:text-slate-400 focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500/40;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-orange-200 bg-orange-50 px-3 py-1 text-xs font-medium text-orange-700;
+  }
+}
+
+/* Markdown editor + preview light tweaks */
+.w-md-editor {
+  background-color: #ffffff !important;
+  border: 1px solid #ffedd5 !important;
+  border-radius: 1rem !important;
+  overflow: hidden;
+  box-shadow: none !important;
+}
+.w-md-editor-toolbar {
+  background-color: #fff7ed !important;
+  border-bottom: 1px solid #ffedd5 !important;
+}
+.w-md-editor-text-pre > code,
+.w-md-editor-text-input {
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+}
+.wmde-markdown {
+  background: transparent !important;
+  color: inherit !important;
+}
+.wmde-markdown img {
+  border-radius: 0.75rem;
+  border: 1px solid #ffedd5;
+}
+.wmde-markdown pre {
+  background: #fff7ed !important;
+  border: 1px solid #ffedd5;
+  border-radius: 0.75rem;
+}
+.wmde-markdown h1,
+.wmde-markdown h2,
+.wmde-markdown h3 {
+  border-bottom-color: #f1f5f9 !important;
+}
+.wmde-markdown a {
+  color: #7c3aed;
+}
+.wmde-markdown table th,
+.wmde-markdown table td {
+  border-color: #e2e8f0;
+}
+.wmde-markdown blockquote {
+  border-left-color: #f97316;
+  color: #475569;
+}
