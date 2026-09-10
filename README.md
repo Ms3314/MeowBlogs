@@ -7,7 +7,8 @@ decides whether the topic needs live web research, gathers evidence, drafts an o
 every section in parallel, and generates diagrams — then hands you editable Markdown you can
 copy or download.
 
----
+ <img width="1430" height="825" alt="download (13)" src="https://github.com/user-attachments/assets/a6d88bb1-2e4b-487e-9ea8-19862cc74010" />
+
 
 ## Short description
 
