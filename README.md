@@ -35,7 +35,15 @@ history library.
 
 ## Architecture
 
+ <img width="1211" height="764" alt="shapes at 26-09-11 01 01 02" src="https://github.com/user-attachments/assets/5a88fb29-a397-42b1-a194-ac8acc4c6409" />
+
+
+
+
+
 ```
+
+
         ┌───────────────┐
 topic ─►│  router_node  │  classify: needs_research? mode?
         └───────┬───────┘
@@ -61,9 +69,18 @@ topic ─►│  router_node  │  classify: needs_research? mode?
                     final Markdown + generated images
 ```
 
-The same graph is defined in the notebook at
-[`learning_cmpx/1main_research_fineimages.ipynb`](learning_cmpx/1main_research_fineimages.ipynb),
-which is the source of truth for the agent logic.
+
+
+
+
+---
+
+<img width="591" height="319" alt="download (2)" src="https://github.com/user-attachments/assets/5bea7045-da90-4ed4-bf5e-c555ff82a69d" />
+
+<img width="593" height="320" alt="download (1)" src="https://github.com/user-attachments/assets/d77b158d-a39a-4aa6-863e-e5a4375de8d8" />
+
+<img width="1125" height="856" alt="download (3)" src="https://github.com/user-attachments/assets/53584fab-ec6f-4956-ac7f-69f8e5bbe47c" />
+
 
 ---
 
